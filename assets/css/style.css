@@ -93,6 +93,10 @@ html, body {
     color: black;
 }
 
+.footer button i {
+    color: black;
+}
+
 .footer img {
     width: 35px;
 }
