@@ -90,6 +90,7 @@ html, body {
 .footer button {
     border: none;
     background-color: white;
+    color: black;
 }
 
 .footer img {
