@@ -4,7 +4,6 @@
 }
 
 html, body {
-    /* width: 100vh; */
     height: 100%;
 }
 
@@ -54,9 +53,15 @@ html, body {
     grid-area: main;
     grid-row-start: 2;
     grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.main div {
     display: flex;
-    flex-direction: column;
-    /* min-height: 500px; */
+    justify-content: center;
+    align-items: center;
 }
 
 .main h1 {
