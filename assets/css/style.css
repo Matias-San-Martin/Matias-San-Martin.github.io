@@ -18,11 +18,9 @@ html, body {
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(50px auto 50px);
     grid-template-areas: 
     "header"
-    "main"
-    "main"
     "main"
     "footer"
     ;
@@ -37,6 +35,14 @@ html, body {
     padding-left: 1rem;
     padding-right: 1rem;
     max-height: 50px;
+}
+
+.displayflex {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 100%;
 }
 
 .header button {
@@ -55,7 +61,16 @@ html, body {
     grid-row-end: 4;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     
+}
+
+.main .displayflex {
+    display: flex;
+    flex-direction: column;
 }
 
 .main div {
