@@ -1,0 +1,21 @@
+.main {
+    justify-content: flex-start;
+}
+
+.contac {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 30%;
+    height: 50%;
+    gap: 100px;
+}
+
+.contac h2 {
+    font-size:xx-large;
+}
+
+.contac div {
+    flex-direction: column;
+    gap: 40px;
+}
