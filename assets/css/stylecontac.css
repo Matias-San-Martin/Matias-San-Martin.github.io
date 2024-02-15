@@ -1,21 +1,124 @@
-.main {
-    justify-content: flex-start;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.contac {
+html, body {
+    height: 100%;
+}
+
+.box {
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridcontainer {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-height: 50px;
+}
+
+.displayflex {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+.header button {
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.header img {
+    width: 125px;
+}
+
+.main {
+    grid-area: main;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main .contac {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    width: 30%;
-    height: 50%;
-    gap: 100px;
+    height: 60%;
+    margin-bottom: 200px;
+    gap: 30px;
 }
 
-.contac h2 {
-    font-size:xx-large;
-}
-
-.contac div {
+.main div {
+    display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main img {
+    width: 100px;
+}
+
+.main button {
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+.footer {
+    grid-area: footer;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    min-height: 50px;
+    max-height: 100px;
+    display: flex;
+    gap: 1rem;
+    /* background-color: aqua; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* margin-bottom: 0; */
+}
+
+.footer button {
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.footer button i {
+    color: black;
+}
+
+.footer img {
+    width: 35px;
 }
