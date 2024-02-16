@@ -57,6 +57,8 @@ html, body {
 
 .main {
     grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
     display: grid;
@@ -64,24 +66,29 @@ html, body {
     grid-template-rows: repeat(6, 1fr);
 }
 
-.main .displayflex {
+/* .main .displayflex {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 200px;
-}
+} */
 
 .main div {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: aqua; */
+    /* max-width: 80%; */
 }
+
+
 
 .main h1 {
     text-align: center;
 }
 
 .main img {
-    width: 300px;
+    width: 250px;
 }
 
 .main button {
